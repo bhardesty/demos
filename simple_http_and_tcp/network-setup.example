@@ -1,0 +1,9 @@
+Router pub1 inter-router.demo.$ROUTING_SUFFIX
+Router pub2 inter-router.demo.$ROUTING_SUFFIX
+Router pvt1
+Router laptop
+Connect pub2 pub1
+Connect pvt1 pub1
+Connect pvt1 pub2
+Connect laptop pub1
+Console laptop console.demo.127.0.0.1.nip.io
